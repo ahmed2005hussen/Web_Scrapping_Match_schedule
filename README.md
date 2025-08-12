@@ -62,12 +62,12 @@ This project went through **three main stages** during development:
 
 ## ▶️ How to Run
 
+### 🖥️ 1. Terminal Version (CLI)
 1. Open your terminal or command prompt.  
 2. Navigate to the project directory.  
 3. Run the program:
-
-```bash
-python main.py
+   ```bash
+   python main.py
 ```
 
 You will see the menu:
@@ -96,7 +96,41 @@ Egyptian League,Al Ahly,Zamalek,20:00,2 | 1
 Premier League,Manchester United,Chelsea,18:30,1 | 1
 ...
 ```
+### 🖱️ 2. Simple GUI Version
+Make sure you have all required libraries installed (`tkinter`, `requests`, `beautifulsoup4`, `lxml`).
 
+Run:
+```bash
+python gui_simple.py
+```
+A small window will appear with options to:
+- Show today’s matches  
+- Pick a specific date  
+- Save results to Match.csv  
+
+📸 Screenshot:  
+![Simple GUI Screenshot]()
+
+---
+
+### 🎨 3. Advanced GUI Version
+Install all required dependencies:
+```bash
+pip install requests beautifulsoup4 lxml tk
+```
+Run:
+```bash
+python gui_advanced.py
+```
+You will get a larger, user-friendly window with:
+- Better layout and navigation  
+- More match filtering options  
+- One-click CSV saving  
+
+📸 Screenshot:  
+![Advanced GUI Screenshot]()
+
+---
 ---
 
 ## ⚠️ Notes
