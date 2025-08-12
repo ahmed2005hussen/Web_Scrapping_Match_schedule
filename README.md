@@ -1,139 +1,114 @@
-# YallaKora Web Scraper
+# YallaKora Web Scraper  
 
-A Python program that performs **Web Scraping** on [Yalla Kora](https://www.yallakora.com/) to fetch all football matches for a specific date, and saves them into a **CSV** file containing:
-- Championship name
-- Team 1
-- Team 2
-- Match result
-- Match start time
+A Python program that performs **Web Scraping** on [Yalla Kora](https://www.yallakora.com/) to fetch all football matches for a specific date and saves them into a **CSV** file containing:  
+- Championship name  
+- Team 1  
+- Team 2  
+- Match result  
+- Match start time  
 
----
+---  
 
-## 📌 Features
-- Display today's matches instantly.
-- Choose any specific date to display matches.
-- Save results into a `Match.csv` file for easy reading or further processing.
-- Dynamic scraping from the Yalla Kora website.
+## 📌 Features  
+- Display today's matches instantly.  
+- Choose any specific date to display matches.  
+- Save results into a `Match.csv` file for easy reading or further processing.  
+- Dynamic scraping from the Yalla Kora website.  
 
----
+---  
 
-## ⚙️ Requirements
+## ⚙️ Requirements  
 
-Make sure you have the following Python libraries installed:
+Make sure you have the following Python libraries installed:  
 
-```bash
-pip install requests beautifulsoup4 lxml
-```
+```bash  
+pip install requests beautifulsoup4 lxml  
+```  
 
----
+---  
 
-## 📂 Project Structure
-```
-project/
-│
-├── main.py          # Main program file
-├── yalla_kora.py    # Class responsible for fetching and saving data
-└── Match.csv        # Generated file after running the program (created automatically)
-```
+## 📂 Project Structure  
+```  
+project/  
+│  
+├── main.py # Main program file  
+├── yalla_kora.py # Class responsible for fetching and saving data  
+└── Match.csv # Generated file after running the program (created automatically)  
+```  
 
----
+---  
 
-## 🖥️ Project Versions
+## 🖥️ Project Versions  
 
 This project went through **three main stages** during development:  
 
-### 1️⃣ Initial Terminal Version (CLI)
-- The very first version, fully running in the terminal.
-- Allowed the user to choose between today's matches or matches for a specific date.
-- Data was fetched and saved to `Match.csv` for further use.
+### 1️⃣ Initial Terminal Version (CLI)  
+- The very first version, fully running in the terminal.  
+- Allowed the user to choose between today's matches or matches for a specific date.  
+- Data was fetched and saved to `Match.csv` for further use.  
 
-### 2️⃣ Simple GUI Version
-- A lightweight graphical interface replicating the terminal version’s functionality.
-- Easier to interact with compared to the CLI.
-- Still saves match data into `Match.csv`.
+### 2️⃣ Simple GUI Version  
+- A lightweight graphical interface replicating the terminal version’s functionality.  
+- Easier to interact with compared to the CLI.  
+- Still saves match data into `Match.csv`.  
 
-### 3️⃣ Advanced GUI Version
-- A more polished and user-friendly interface.
-- Added extra features and a better layout.
-- Provides a smoother experience while keeping CSV export functionality.
+### 3️⃣ Advanced GUI Version  
+- A more polished and user-friendly interface.  
+- Added extra features and a better layout.  
+- Provides a smoother experience while keeping CSV export functionality.  
 
-> Each version helped me better understand **Web Scraping**, **File Handling**, and how to improve usability over time.
+> Each version helped me better understand **Web Scraping**, **File Handling**, and how to improve usability over time.  
 
+---  
 
-## ▶️ How to Run
+## ▶️ How to Run  
 
-### 🖥️ 1. Terminal Version (CLI)
+### 🖥️ 1. Terminal Version (CLI)  
 1. Open your terminal or command prompt.  
 2. Navigate to the project directory.  
-3. Run the program:
-   ```bash
-   python main.py
-```
+3. Run the program:  
+ ```bash  
+ python main.py  
+```  
 
-You will see the menu:
+You will see the menu:  
 
-```
-===================
-Welcome To you :)
-===================
-What do you want: 
------------------
-1- show today's matches
-2- show matches in another day
-3- Exit 
-```
+  
+![Terminal Version Screenshot](https://raw.githubusercontent.com/ahmed2005hussen/Web_Scrapping_Match_schedule/main/Screen%20Shoot/Screenshot%202025-08-11%20190916.png)
+  
 
-- **Option 1**: Show today's matches and save them to CSV.  
-- **Option 2**: Enter a specific date and show matches for that date.  
-- **Option 3**: Exit the program.  
+### 🖱️ 2. Simple GUI Version  
+Make sure you have all required libraries installed (`tkinter`, `requests`, `beautifulsoup4`, `lxml`).  
 
----
-
-## 📄 Example Output in `Match.csv`
-```csv
-Championship,Team 1,Team 2,Start Time,Result
-Egyptian League,Al Ahly,Zamalek,20:00,2 | 1
-Premier League,Manchester United,Chelsea,18:30,1 | 1
-...
-```
-### 🖱️ 2. Simple GUI Version
-Make sure you have all required libraries installed (`tkinter`, `requests`, `beautifulsoup4`, `lxml`).
-
-Run:
-```bash
-python gui_simple.py
-```
-A small window will appear with options to:
+ 
+A small window will appear with options to:  
 - Show today’s matches  
 - Pick a specific date  
 - Save results to Match.csv  
 
 📸 Screenshot:  
-![Simple GUI Screenshot]()
+![Simple GUI Screenshot](https://raw.githubusercontent.com/ahmed2005hussen/Web_Scrapping_Match_schedule/main/Screen%20Shoot/Screenshot%202025-08-12%20020301.png)
 
----
+---  
 
-### 🎨 3. Advanced GUI Version
-Install all required dependencies:
-```bash
-pip install requests beautifulsoup4 lxml tk
-```
-Run:
-```bash
-python gui_advanced.py
-```
-You will get a larger, user-friendly window with:
+### 🎨 3. Advanced GUI Version  
+Install all required dependencies:  
+```bash  
+pip install requests beautifulsoup4 lxml tk  
+```  
+ 
+You will get a larger, user-friendly window with:  
 - Better layout and navigation  
 - More match filtering options  
 - One-click CSV saving  
 
 📸 Screenshot:  
-![Advanced GUI Screenshot]()
+![Advanced GUI Screenshot](https://raw.githubusercontent.com/ahmed2005hussen/Web_Scrapping_Match_schedule/main/Screen%20Shoot/Screenshot%202025-08-12%20020720.png)
 
----
----
+---  
+---  
 
-## ⚠️ Notes
+## ⚠️ Notes  
 - You must be connected to the internet while running the program.  
 - If you enter a date with no matches or an invalid date, the program will notify you.  
 - If Yalla Kora changes its page structure in the future, the scraping logic may need updates.
