@@ -38,6 +38,28 @@ project/
 
 ---
 
+## 🖥️ Project Versions
+
+This project went through **three main stages** during development:  
+
+### 1️⃣ Initial Terminal Version (CLI)
+- The very first version, fully running in the terminal.
+- Allowed the user to choose between today's matches or matches for a specific date.
+- Data was fetched and saved to `Match.csv` for further use.
+
+### 2️⃣ Simple GUI Version
+- A lightweight graphical interface replicating the terminal version’s functionality.
+- Easier to interact with compared to the CLI.
+- Still saves match data into `Match.csv`.
+
+### 3️⃣ Advanced GUI Version
+- A more polished and user-friendly interface.
+- Added extra features and a better layout.
+- Provides a smoother experience while keeping CSV export functionality.
+
+> Each version helped me better understand **Web Scraping**, **File Handling**, and how to improve usability over time.
+
+
 ## ▶️ How to Run
 
 1. Open your terminal or command prompt.  
